@@ -63,7 +63,9 @@ class SiderCustom extends Component {
                 collapsed={this.props.collapsed}
                 style={{ overflowY: 'auto' }}
             >
-                <div className="logo" />
+                <div className="logo">
+                    AIEX.ONE
+                </div>
                 <SiderMenu
                     menus={menus}
                     onClick={this.menuClick}
