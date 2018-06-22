@@ -19,3 +19,14 @@ export const queryString = () => {
     });
     return _queryString;
 };
+
+export const parsePairs = (pairsName) => {
+    if (pairsName.indexOf("USDT") > -1) {
+        pairsName = pairsName.replace("USDT", "/USDT")
+    } else if (pairsName.indexOf("BTC") > -1) {
+        pairsName = pairsName.replace("BTC", "/BTC")
+    } else if (pairsName.indexOf("ETH") > -1) {
+        pairsName = pairsName.replace("ETH", "/ETH")
+    }
+    return pairsName
+}
